@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Library</title>
+</head>
+<body>
+    <h1>Book Library</h1>
+    <div id="addBook">
+      <button><b>ADD A BOOK</b></button>
+    </div>
+    <br><br><br>
+    <div id="formcontainer">
+      <form id="myForm" class="form-popup">
+          <label><b>Book Name</b></label>
+          <input type="text" placeholder="Enter Book Title" id="title">
+      
+          <label><b>Book Author</b></label>
+          <input type="text" id="author">
+           
+
+          <label><b>Book Pages</b></label>
+          <input type="number" id="numPages">
+
+          <label><b>Read Status</b></label>
+          <select name="readstatus" id="readstatus">
+            <option value="Read">Read</option>
+            <option value="Not Read">Not Read</option>
+          </select>
+          <!-- <input type="checkbox" class="readstatus"/> -->
+          <button type="submit" class="btn" id="submitBook" >Submit</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      <br><br>
+      <div id="errormsg"></div>
+
+   <div id="displayform"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
