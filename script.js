@@ -110,7 +110,7 @@ readstatusBtn.forEach((element)=>{
         }else{
 
         toggle.innerText = 'Read';
-        
+        toggle.style.backgroundColor = '#04AA6D';
         myLibrary[readstatusId].readstatus = "Read";
         setData();
       } 
