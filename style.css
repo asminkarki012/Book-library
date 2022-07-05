@@ -58,3 +58,11 @@ button{
 button:hover{
   background-color:lightseagreen;
 }
+.readstatus-button{
+  background-color: #FFFFFF;
+  color:black;
+}
+.delete{
+  background-color: #D4235E;
+  color:white;
+}

@@ -34,7 +34,6 @@ let form = document.getElementById('myForm');
 
 function addBookToLibrary(e) {
   
-  // do stuff here
  
   e.preventDefault();
   const myform = document.getElementById('myForm');
@@ -66,7 +65,6 @@ Display.prototype.add = function(myLibrary){
  for(let i in myLibrary){
 
   output += '<tr id='+i+'><td>'+myLibrary[i].title+'</td><td>'+myLibrary[i].author+'</td><td>'+myLibrary[i].numPages+'</td><td><button class="readstatus-button" id="button'+i+'">'+myLibrary[i].readstatus+'</button></td><td><button class="delete" id='+i+'>Delete</button></td></tr>';
-
 }
  output+='</table></div>'
 
@@ -97,20 +95,17 @@ readstatusBtn.forEach((element)=>{
       
       let readstatusButtonId = e.target.id;
       let readstatusId = readstatusButtonId.replace('button','');
-      console.log(readstatusId);
       const toggle = document.getElementById(readstatusButtonId);
       
       if(myLibrary[readstatusId].readstatus=="Read"){
 
          toggle.innerText = "Not Read";
-         toggle.style.backgroundColor = 'red';
          myLibrary[readstatusId].readstatus = "Not Read";
          setData();
      
         }else{
 
         toggle.innerText = 'Read';
-        toggle.style.backgroundColor = '#04AA6D';
         myLibrary[readstatusId].readstatus = "Read";
         setData();
       } 
