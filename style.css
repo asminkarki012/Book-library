@@ -48,7 +48,7 @@ button{
   background-color:#04AA6D; /* Green */
   border: none;
   color: white;
-  padding: 15px 30px;
+  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -57,6 +57,7 @@ button{
 }
 button:hover{
   background-color:lightseagreen;
+  cursor: pointer;
 }
 .readstatus-button{
   background-color: #FFFFFF;
@@ -65,4 +66,9 @@ button:hover{
 .delete{
   background-color: #D4235E;
   color:white;
+}
+
+#displayform{
+  box-sizing: border-box;
+  
 }
